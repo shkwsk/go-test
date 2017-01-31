@@ -2,10 +2,13 @@ package main
 
 import "fmt"
 
-func main() {
-	hello()
+func hello() {
+	var hello string = "Hello world."
+	for i := 0; i < 10; i++ {
+		fmt.Println(hello, i)
+	}
 }
 
-func hello() {
-	fmt.Println("Hello world.")
+func main() {
+	hello()
 }
